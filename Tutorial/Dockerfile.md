@@ -15,6 +15,7 @@ Using `docker build` users can create an automated build that executes several c
 FROM python:3.10-slim , python:3.10-alpine, python:3.10-buster, python:3.10-slim-buster, python:3.10-slim-bullseye, python:3.10-bullseye,
 python:3.10-slim-stretch, python:3.10-stretch.
 # Sets the version of the image to use for the container
+
 # Set the working directory in the container
 WORKDIR /code
 
@@ -32,6 +33,7 @@ ENV NAME World
 
 # Run app to Server
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0.", "--port", "8000", "--reload"]
+# For docker server always use "0.0.0.0." as port
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
