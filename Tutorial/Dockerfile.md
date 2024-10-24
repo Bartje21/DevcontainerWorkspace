@@ -12,8 +12,7 @@ Using `docker build` users can create an automated build that executes several c
 
 ```Dockerfile
 # Use the official lightweight python image
-FROM python:3.10-slim , python:3.10-alpine, python:3.10-buster, python:3.10-slim-buster, python:3.10-slim-bullseye, python:3.10-bullseye,
-python:3.10-slim-stretch, python:3.10-stretch.
+FROM python:3.10-slim ,
 # Sets the version of the image to use for the container
 
 # Set the working directory in the container
