@@ -1,4 +1,6 @@
-# Docker Terminal Commands
+# Docker Commands
+
+## Terminal
 
 ### *Run Docker container*
 
@@ -19,3 +21,7 @@
 ### *View Active Containers/Ports*
 
 `docker ps`
+
+### *Docker stop container*
+
+`Docker stop fastapi-container`
